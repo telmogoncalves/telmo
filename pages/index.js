@@ -22,7 +22,7 @@ function Homepage({ writings }) {
 		      	const { data: { title, date } } = document
 
 		      	return (
-		      		<Col md={6}>
+		      		<Col md={6} key={slug}>
 		      			<div className="writing-row" key={title}>
 				      		<Row>
 				      			<Col md={12}>
