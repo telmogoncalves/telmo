@@ -3,6 +3,21 @@ import { Grid, Row, Col } from 'react-flexbox-grid'
 import { Sun, Moon } from 'react-feather'
 import Link from 'next/link'
 
+const menu = [
+	{
+		path: '/',
+		name: 'start',
+	},
+	{
+		path: '/about',
+		name: 'about',
+	},
+	{
+		path: '/uses',
+		name: 'uses',
+	},
+]
+
 function Layout({ children, isHomepage, secondaryPage, noHead = false }) {
 	const [theme, setTheme] = useState()
 	const [mounted, setMounted] = useState(false)
@@ -41,23 +56,13 @@ function Layout({ children, isHomepage, secondaryPage, noHead = false }) {
 				<Row>
 					<Col xs={6}>
 						<ul>
-							<li>
-								<Link href="/" as="/">
-									<a>start</a>
-								</Link>
-							</li>
-
-							<li>
-								<Link href="/about" as="/about">
-									<a>about</a>
-								</Link>
-							</li>
-
-							<li>
-								<Link href="/uses" as="/uses">
-									<a>uses</a>
-								</Link>
-							</li>
+							{menu.map(({ path, name }) => (
+								<li key={name}>
+									<Link href={path} as={path}>
+										<a>{name}</a>
+									</Link>
+								</li>
+							))}
 						</ul>
 					</Col>
 
