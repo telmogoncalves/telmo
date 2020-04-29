@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
 	      <meta property="og:description" content={og ? og.description : `Writing about the tips I usually share on Twitter and some more.`} />
 	      <meta name="twitter:card" content="summary_large_image" />
 	      <meta name="twitter:site" content="@telmo" />
-	      <meta property="og:image" content={og ? og.image : `https://telmo.im/og/default.png"`} />
+	      <meta property="og:image" content={og ? og.image : `https://telmo.im/og/default.png`} />
 
 	      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
