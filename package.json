@@ -1,0 +1,31 @@
+{
+  "name": "telmo",
+  "version": "1.0.0",
+  "description": "A tale of code & design",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "Telmo Goncalves <@telmo>",
+  "license": "ISC",
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "gray-matter": "^4.0.2",
+    "next": "^9.3.5",
+    "next-transpile-modules": "^2.3.1",
+    "raw-loader": "^4.0.1",
+    "react": "^16.13.1",
+    "react-copy-to-clipboard": "^5.0.2",
+    "react-dom": "^16.13.1",
+    "react-feather": "^2.0.4",
+    "react-flexbox-grid": "^2.1.2",
+    "react-markdown": "^4.3.1",
+    "react-scroll-progress-bar": "^1.1.12",
+    "react-syntax-highlighter": "^12.2.1",
+    "react-text-transition": "^1.0.2",
+    "simple-icons": "^2.9.0"
+  }
+}

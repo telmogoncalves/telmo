@@ -1,0 +1,441 @@
+@import url('https://rsms.me/inter/inter.css');
+@import url('https://use.typekit.net/cyw3eir.css');
+
+:root {
+  --primary-color: #0070f4;
+  --secondary-color: #666;
+  --font-color: #000;
+  --bg-color: #fff;
+  --heading-color: #000;
+  --highlight-color: #84ffb5;
+  --hr-color: #eee;
+  --writing-body: #444;
+  --uses-secondary-color: #bbb;
+}
+
+[data-theme="dark"] {
+  --primary-color: #9A97F3;
+  --secondary-color: #666;
+  --font-color: #fff;
+  --bg-color: #010101;
+  --heading-color: #fff;
+  --highlight-color: #f81de6;
+  --hr-color: #222;
+  --writing-body: #ccc;
+}
+
+::-moz-selection { background: var(--highlight-color); }
+::selection { background: var(--highlight-color); }
+
+html {
+	font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+
+* {
+	transition: background .2s linear;
+}
+
+.top-menu {
+	margin: 20px 10px 0;
+}
+
+.top-menu ul {
+	margin: 3px 0 0 10px;
+	padding: 0;
+}
+
+.top-menu ul li {
+	display: inline;
+	margin-right: 5px;
+}
+
+.top-menu ul li a {
+	color: var(--heading-color);
+	font-family: ibm-plex-mono, Monaco, 'Lucida Console';
+	padding: 0 0 3px;
+	text-decoration: none;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 3px 10px 5px;
+	border-radius: 4px;
+}
+
+.top-menu ul li a:hover {
+	background: var(--heading-color);
+	color: var(--bg-color);
+}
+
+.theme-switch-button {
+	border: none;
+	background: none;
+	cursor: pointer;
+	cursor: hand;
+	color: var(--heading-color);
+	outline: 0;
+}
+
+.theme-switch-button svg {
+	fill: var(--heading-color);
+}
+
+.amp {
+	font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+	font-style: italic;
+	font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color);
+}
+
+.blog-title {
+	font-weight: 700;
+	font-size: 80px;
+	letter-spacing: -.3rem;
+	text-align: center;
+	margin: 100px 0 50px;
+}
+
+.writing-row a {
+	text-decoration: none;
+}
+
+.writing-row span {
+	display: inline-flex;
+	align-items: center;
+}
+
+.writing-row {
+	padding: 20px;
+}
+
+.writing-row a {
+	color: var(--heading-color);
+	display: inline-block;
+	padding: 5px 0;
+	position: relative;
+	margin-top: 20px;
+}
+
+.writing-row a:before {
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  top: 0;
+  left: 0;
+  background-color: var(--highlight-color);
+  transform: scaleX(0);
+  transform-origin: top left;
+
+  transition: transform 0.3s;
+}
+    
+.writing-row a:after {
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  right: 0;
+  background-color: var(--highlight-color);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+
+  transition: transform 0.3s;
+}
+
+.writing-row a:hover:before {
+  transform-origin: top right;
+  transform: scaleX(1);
+}
+    
+.writing-row a:hover:after {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+.writing-row .writing-date {
+	padding-right: 20px;
+	font-size: 14px;
+	color: var(--secondary-color);
+}
+
+.writing-row .writing-title {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1.9em;
+}
+
+.writing-title-h1, .uses-h1, .about-h1 {
+	font-weight: 700;
+	font-size: 56px;
+	letter-spacing: -.2rem;
+	margin: 50px 0 30px;
+}
+
+.about-h1 {
+	margin-bottom: 60px;
+	font-size: 72px;
+}
+
+.writing-container h1,
+.writing-container h2,
+.writing-container h3,
+.writing-container h4,
+.writing-container h5,
+.writing-container h6 {
+	letter-spacing: -1px;
+}
+
+.writing-container img {
+	width: 100%;
+}
+
+.writing-container ul {
+	margin: 0;
+	padding: 0 0 30px 20px;
+	list-style: circle;
+}
+
+.writing-container ul li {
+	padding: 4px 0;
+	line-height: 1.8em;
+	font-size: 20px;
+	color: var(--writing-body);
+}
+
+.writing-container blockquote {
+	border-left: 5px var(--highlight-color) solid;
+	font-style: italic;
+	margin: 0;
+	padding: 0px 30px;
+}
+
+.writing-container p {
+	line-height: 1.8em;
+	margin-bottom: 40px;
+	font-size: 20px;
+	color: var(--writing-body);
+}
+
+.writing-container *:not(pre) > code {
+	font-family: ibm-plex-mono, Monaco, 'Lucida Console';
+	background:var(--highlight-color);
+	color: var(--heading-color);
+	padding: 3px 7px 6px;
+	border-radius: 4px;
+	line-height: 1em;
+	font-size: 16px;
+	display: inline-flex;
+}
+
+hr {
+	border: none;
+	border-top: 1px var(--hr-color) solid;
+	margin: 45px 0;
+}
+
+.writing-container a {
+	color: var(--heading-color);
+	text-decoration: none;
+	border-bottom: 1px var(--heading-color) dashed;
+}
+
+.back-button {
+	color: var(--secondary-color);
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: -1px;
+	border: 1px var(--hr-color) solid;
+	display: inline-block;
+	padding: 10px 20px;
+	border-radius: 4px;
+	font-weight: 500;
+}
+
+.back-button:hover {
+	border-color: var(--secondary-color);
+}
+
+.copy-to-clipboard {
+	text-align: right;
+	padding-right: 15px;
+	margin: -10px 0 25px;
+}
+
+.copy-to-clipboard button {
+	background: none;
+	border: none;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: var(--secondary-color);
+	cursor: pointer;
+	cursor: hand;
+	outline: 0;
+	padding: 0;
+}
+
+.copy-to-clipboard button:hover {
+	color: var(--heading-color);
+}
+
+footer {
+	text-align: center;
+	font-size: 13px;
+	padding: 100px 0;
+	color: var(--secondary-color);
+}
+
+.author {
+	margin-bottom: 40px;
+}
+
+.author a {
+	color: var(--heading-color);
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.author img {
+	border-radius: 250px;
+	margin-right: 10px;
+	border: 2px var(--highlight-color) solid;
+	padding: 3px;
+}
+
+.author * {
+	display: flex;
+	align-items: center;
+}
+
+.twitter-follow {
+	border: 3px var(--highlight-color) dashed;
+	padding: 30px;
+	border-radius: 8px;
+	font-size: 18px;
+	line-height: 1.9em;
+}
+
+.uses-intro, .about-intro {
+	font-size: 20px;
+	line-height: 1.8em;
+	color: var(--secondary-color);
+}
+
+.uses-intro a, .about-intro a {
+	color: var(--heading-color);
+	text-decoration: none;
+	border-bottom: 1px var(--heading-color) dashed;
+}
+
+.about-intro h3 {
+	font-weight: 600;
+}
+
+.about-avatar {
+	width: 60%;
+	margin-bottom: 30px;
+	border-radius: 100%;
+	position: fixed;
+	z-index: -1;
+	bottom: -40%;
+	left: -10%;
+	opacity: .05;
+}
+
+.uses-list {
+	list-style: none;
+	margin: 40px 0 80px;
+	padding: 0;
+	font-family: ibm-plex-mono, Monaco, 'Lucida Console';
+}
+
+.uses-list li.head {
+	font-weight: 600;
+	font-size: 32px;
+	margin-bottom: 20px;
+	box-shadow: inset 0 -16px 0 var(--highlight-color);
+	display: inline-block;
+}
+
+.uses-list li:not(.head) {
+	padding: 15px 0;
+}
+
+.uses-list li:not(.head):before {
+	content: "//";
+	color: var(--uses-secondary-color);
+	padding-right: 10px;
+}
+
+.uses-list li:not(.head) {
+	color: var(--uses-secondary-color);
+}
+
+.uses-list li:not(.head) a {
+	color: var(--heading-color);
+	font-weight: 600;
+	text-decoration: none;
+	margin-right: 15px;
+	padding-bottom: 3px;
+}
+
+.uses-list li:not(.head) a:hover {
+	border-bottom: 1px var(--heading-color) dashed;
+}
+
+[data-icon="Next.js"] svg {
+	fill: var(--heading-color);
+}
+
+.stack-name {
+	font-family: ibm-plex-mono, Monaco, 'Lucida Console';
+	font-size: 13px;
+	color: var(--heading-color);
+}
+
+/* Override scroll progress */
+.writing-progress > div {
+	background: var(--highlight-color) !important;
+	margin: 0 -8px !important;
+}
+
+@media only screen and (max-width: 960px) {
+  .writing-row .writing-date {
+  	text-align: left;
+  	padding: 10px 0;
+  }
+
+  .uses-list li:not(.head) span {
+  	display: block;
+  	margin-top: 10px;
+  }
+
+  .uses-list li:not(.head) {
+  	padding-bottom: 25px;
+  }
+
+  .stack-name {
+  	font-size: 10px;
+  }
+
+  .text-transition {
+  	display: block !important;
+  }
+
+  .about-avatar {
+  	width: 120%;
+  }
+
+  .writing-row a {
+  	margin-top: 0;
+  }
+}
