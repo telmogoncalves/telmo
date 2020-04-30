@@ -89,7 +89,7 @@ function Layout({ children, isHomepage, secondaryPage, noHead = false }) {
 			</Grid>
 
 			<footer>
-				&copy; {new Date().getFullYear()}
+				&copy; 2020
 			</footer>
 		</>
 	)
