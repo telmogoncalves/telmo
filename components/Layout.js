@@ -19,28 +19,27 @@ const menu = [
 ]
 
 function Layout({ children, isHomepage, secondaryPage, noHead = false }) {
-	const [theme, setTheme] = useState()
+	const onLoadTheme = typeof localStorage !== 'undefined' && localStorage.getItem('BLOG_THEME')
+	const [theme, setTheme] = useState(onLoadTheme)
 	const [mounted, setMounted] = useState(false)
 	const switchTheme = () => {
 		const setTo = theme === 'dark' ? 'light' : 'dark'
 
 		setTheme(setTo)
-		localStorage.setItem('BLOG_THEME', setTo)
 	}
 
 	useEffect(() => {
-		let theme
-
 		if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-			theme = 'dark'
+			setTheme('dark')
 		}
 
-		setTheme(localStorage.getItem('BLOG_THEME') || theme)
+		setMounted(true)
 	}, [])
 
 	useEffect(() => {
 		document.documentElement.setAttribute('data-theme', theme)
-		setMounted(true)
+
+		localStorage.setItem('BLOG_THEME', theme)
 	}, [theme])
 
 	const containerProps = {
