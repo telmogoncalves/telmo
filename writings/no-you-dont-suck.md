@@ -49,7 +49,7 @@ published ? "Well, yes!" : "Not yet, sorry!"
 
 ## How useState works?
 
-No fucking idea, I know it updates a component's state, I know how to set it, to change it, when to use it, etc; What's happening being the scenes? 🤷‍♂️
+No fucking idea, I know it updates a component's state, I know how to set it, to change it, when to use it, etc; What's happening behind the scenes? 🤷‍♂️
 
 ---
 
