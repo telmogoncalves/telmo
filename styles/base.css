@@ -392,7 +392,9 @@ footer {
 	border-bottom: 1px var(--heading-color) dashed;
 }
 
-[data-icon="Next.js"] svg {
+[data-icon="Next.js"] svg,
+[data-icon="Zeit"] svg,
+[data-icon="CoffeeScript"] svg {
 	fill: var(--heading-color);
 }
 

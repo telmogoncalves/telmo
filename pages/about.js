@@ -10,7 +10,7 @@ const TextTransition = dynamic(() => import("react-text-transition"), {
 });
 
 import Layout from '../components/Layout'
-import { PAST, PRESENT, SKILLS } from '../constants/Stack'
+import { PRESENT, SKILLS } from '../constants/Stack'
 
 const Icon = ({ stack, style }) => {
   const icon = simpleIcons.get(stack)
@@ -73,20 +73,7 @@ function About() {
 
 						<hr />
 
-						<h3>Technologies I've worked over the years</h3>
-
-						<Row style={{ marginTop: 30 }}>
-							{PAST.map(s => (
-								<Col md={2} xs={3} key={s} style={{ textAlign: 'center', marginBottom: 40 }}>
-									<Icon stack={s} />
-									<div className="stack-name">{s}</div>
-								</Col>
-							))}
-						</Row>
-
-						<br />
-
-						<h3>What I'm focusing at the moment</h3>
+						<h3>What I've worked with so far</h3>
 
 						<Row style={{ marginTop: 30 }}>
 							{PRESENT.map(s => (
