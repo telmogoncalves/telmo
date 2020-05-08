@@ -6,7 +6,7 @@ author:
   name: "Telmo Goncalves"
 ---
 
-Destructuring is a convenient way of extracting multiple values 
+Destructuring is a convenient way of extracting multiple values
 from data stored in objects and Arrays.
 
 ---

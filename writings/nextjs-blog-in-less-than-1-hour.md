@@ -351,7 +351,7 @@ Now lets change our component to receive our new `props`:
 export default function PostTemplate({ content, data }) {
   // This holds the data between `---` from the .md file
   const frontmatter = data
-  
+
   return (
     <div>
       <h1>{frontmatter.title}</h1>
@@ -370,7 +370,7 @@ It's missing rendering the `content`, lets take care of that:
 export default function PostTemplate({ content, data }) {
   // This holds the data between `---` from the .md file
   const frontmatter = data
-  
+
   return (
     <div>
       <h1>{frontmatter.title}</h1>
@@ -424,7 +424,7 @@ import ReactMarkdown from 'react-markdown'
 export default function PostTemplate({ content, data }) {
   // This holds the data between `---` from the .md file
   const frontmatter = data
-  
+
   return (
     <div>
       <h1>{frontmatter.title}</h1>

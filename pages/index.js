@@ -7,43 +7,43 @@ import { Row, Col } from 'react-flexbox-grid'
 import Layout from '../components/Layout'
 
 function formatDate(date) {
-	const options = { year: 'numeric', month: 'long', day: 'numeric' };
-	const today  = new Date(date);
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  const today  = new Date(date);
 
-	return today.toLocaleDateString("en-US", options);
+  return today.toLocaleDateString("en-US", options);
 }
 
 function Homepage({ writings }) {
   return (
-  	<>
-	    <Layout isHomepage>
-	      <Row>
-	      	{writings.map(({ document, slug }) => {
-		      	const { data: { title, date } } = document
+    <>
+      <Layout isHomepage>
+        <Row>
+          {writings.map(({ document, slug }) => {
+            const { data: { title, date } } = document
 
-		      	return (
-		      		<Col md={6} key={slug}>
-		      			<div className="writing-row" key={title}>
-				      		<Row>
-				      			<Col md={12}>
-						      		<div className="writing-date">{formatDate(date)}</div>
-						      	</Col>
+            return (
+              <Col md={6} key={slug}>
+                <div className="writing-row" key={title}>
+                  <Row>
+                    <Col md={12}>
+                      <div className="writing-date">{formatDate(date)}</div>
+                    </Col>
 
-						      	<Col md={12}>
-					      			<Link href="/writings/[slug]" as={`/writings/${slug}`}>
-					      				<a>
-					      					<span className="writing-title">{title}</span>
-					      				</a>
-					      			</Link>
-				      			</Col>
-				      		</Row>
-				      	</div>
-		      		</Col>
-		      	)
-		      })}
-	      </Row>
-	    </Layout>
-	  </>
+                    <Col md={12}>
+                      <Link href="/writings/[slug]" as={`/writings/${slug}`}>
+                        <a>
+                          <span className="writing-title">{title}</span>
+                        </a>
+                      </Link>
+                    </Col>
+                  </Row>
+                </div>
+              </Col>
+            )
+          })}
+        </Row>
+      </Layout>
+    </>
   )
 }
 

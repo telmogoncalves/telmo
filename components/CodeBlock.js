@@ -147,11 +147,11 @@ class CodeBlock extends PureComponent {
         </SyntaxHighlighter>
 
         <div className="copy-to-clipboard">
-        	<CopyToClipboard text={value} onCopy={() => this.copyToClipboard()}>
-	          <button>
-	          	{copiedToClipboard ? 'Copied ✔' : 'Copy'}
-	          </button>
-	        </CopyToClipboard>
+          <CopyToClipboard text={value} onCopy={() => this.copyToClipboard()}>
+            <button>
+              {copiedToClipboard ? 'Copied ✔' : 'Copy'}
+            </button>
+          </CopyToClipboard>
         </div>
       </div>
     );

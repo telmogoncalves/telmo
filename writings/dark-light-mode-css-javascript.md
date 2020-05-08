@@ -94,7 +94,7 @@ theme already:
 
 [data-theme="dark"] {
   --bg-color: #000;
-  --text-color: #fff;	
+  --text-color: #fff;
 }
 
 body {

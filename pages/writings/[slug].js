@@ -14,53 +14,53 @@ function Writing({ content, data }) {
   const avatar = `https://images.weserv.nl/?url=https://unavatar.now.sh/twitter/${author.twitter}&w=40`
 
   return (
-  	<>
-  		<div className="writing-progress">
-  			<ProgressBar height="5px" />
-  		</div>
-    
-	    <Layout secondaryPage noHead>
-	    	<div style={{ marginTop: 50 }}>
-	    		<Link href="/" as="/">
-		    		<a className="back-button">
-		    			back
-		    		</a>
-		    	</Link>
-		      <h1 className="writing-title-h1">{title}</h1>
+    <>
+      <div className="writing-progress">
+        <ProgressBar height="5px" />
+      </div>
 
-		      <div className="author">
-		      	<a href={`https://twitter.com/${author.twitter}`} target="_blank" rel="noopener noreferrer nofollow">
-		      		<img src={avatar} />
-		      		{author.name}
-		      	</a>
-		      </div>
+      <Layout secondaryPage noHead>
+        <div style={{ marginTop: 50 }}>
+          <Link href="/" as="/">
+            <a className="back-button">
+              back
+            </a>
+          </Link>
+          <h1 className="writing-title-h1">{title}</h1>
 
-		      <div className="writing-container">
-		      	<ReactMarkdown
-			      	source={content}
-			      	escapeHtml={false}
-			      	renderers={{
-			      		code: CodeBlock,
-			      		link: props => {
-			      			if (!props.href.startsWith('http')) {
-	   								return props.href;
-	  							}
+          <div className="author">
+            <a href={`https://twitter.com/${author.twitter}`} target="_blank" rel="noopener noreferrer nofollow">
+              <img src={avatar} />
+              {author.name}
+            </a>
+          </div>
 
-	  							return <a href={props.href} rel="nofollow noreferrer noopener" target="_blank">{props.children}</a>;
-			      		}
-			      	}}
-			      />
+          <div className="writing-container">
+            <ReactMarkdown
+              source={content}
+              escapeHtml={false}
+              renderers={{
+                code: CodeBlock,
+                link: props => {
+                  if (!props.href.startsWith('http')) {
+                     return props.href;
+                  }
 
-			      <div className="twitter-follow">
-			      	If you liked this post I'm sure you'll love
-			      	what I usually share on {' '}
-			      	<a href="https://twitter.com/telmo" rel="noopener noreferrer nofollow">Twitter</a>,
-			      	I share a lot of coding tips there ✌️
-			      </div>
-		      </div>
-	    	</div>
-	    </Layout>
-	  </>
+                  return <a href={props.href} rel="nofollow noreferrer noopener" target="_blank">{props.children}</a>;
+                }
+              }}
+            />
+
+            <div className="twitter-follow">
+              If you liked this post I'm sure you'll love
+              what I usually share on {' '}
+              <a href="https://twitter.com/telmo" rel="noopener noreferrer nofollow">Twitter</a>,
+              I share a lot of coding tips there ✌️
+            </div>
+          </div>
+        </div>
+      </Layout>
+    </>
   )
 }
 
