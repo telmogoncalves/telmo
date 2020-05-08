@@ -29,17 +29,19 @@ function Layout({ children, isHomepage, secondaryPage, noHead = false }) {
   }
 
   useEffect(() => {
+    if (onLoadTheme) return
+
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       setTheme('dark')
     }
-
-    setMounted(true)
   }, [])
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)
 
     localStorage.setItem('BLOG_THEME', theme)
+
+    setMounted(true)
   }, [theme])
 
   const containerProps = {
