@@ -150,11 +150,6 @@ h1, h2, h3, h4, h5, h6 {
   transition: transform 0.3s;
 }
 
-.writing-row a:hover:before {
-  transform-origin: top right;
-  transform: scaleX(1);
-}
-
 .writing-row a:hover:after {
   transform-origin: bottom left;
   transform: scaleX(1);
@@ -228,7 +223,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: ibm-plex-mono, Monaco, 'Lucida Console';
   background:var(--highlight-color);
   color: var(--heading-color);
-  padding: 3px 7px 6px;
+  padding: 2px 7px 5px;
   border-radius: 4px;
   line-height: 1em;
   font-size: 16px;
