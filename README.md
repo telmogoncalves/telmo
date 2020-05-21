@@ -24,4 +24,34 @@ npm install
 npm run dev
 ```
 
+## Tips for Netlify fans
+
+There are two ways you can deploy this site to netlify,
+
+- generate static folder using below command and upload to zip to your domain on netlify
+
+```
+npm runn build:static
+```
+
+If you face any issue while refreshing the routes, you can modify nex.config.js 
+using exportPathMap function.
+
+If your blog name is writings/comparision-operaror-in-javascript.md you can add code as 
+shown below, becuase writings/[slug].js looks for slug which can be passed.
+
+```
+exportPathMap: async function(
+			defaultPathMap,
+			{ dev, dir, outDir, distDir, buildId }
+		  ) {
+			return {
+				'/about': { page: '/about' },
+				'/uses': { page: '/uses' },
+				'/': { page: '/' },
+				'/writings/comparision-operaror-in-javascript': { page:'/writings/[slug]', query: { slug: 'comparision-operaror-in-javascript' }},
+			}
+		  },
+```
+
 Just make sure to remove any references of my name and use yours 🙂
