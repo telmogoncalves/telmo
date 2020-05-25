@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import simpleIcons from 'simple-icons'
-import Head from 'next/head'
 import { Row, Col } from 'react-flexbox-grid'
 import dynamic from 'next/dynamic'
 import { config } from 'react-spring'
@@ -10,29 +8,12 @@ const TextTransition = dynamic(() => import("react-text-transition"), {
 });
 
 import Layout from '../components/Layout'
+import Icon from '../components/Icon'
 import { PRESENT, SKILLS } from '../constants/Stack'
-
-const Icon = ({ stack, style }) => {
-  const icon = simpleIcons.get(stack)
-
-  return (
-    <div
-      data-icon={stack}
-      style={{
-        fill: `#${icon.hex}`,
-        display: 'inline-block',
-        width: '50px',
-        margin: '0 auto',
-        ...style,
-      }}
-      dangerouslySetInnerHTML={{ __html: icon.svg }}
-    />
-  )
-}
 
 function About() {
   const [index, setIndex] = useState(0)
-  const avatar = `https://images.weserv.nl/?url=https://unavatar.now.sh/twitter/telmo`
+  const avatar = `/images/Avatar.jpg`
 
   useEffect(() => {
     const intervalId = setInterval(() =>
@@ -78,7 +59,7 @@ function About() {
             <Row style={{ marginTop: 30 }}>
               {PRESENT.map(s => (
                 <Col md={2} xs={4} key={s} style={{ textAlign: 'center', marginBottom: 40 }}>
-                  <Icon stack={s} />
+                  <Icon type={s} />
                   <div className="stack-name">{s}</div>
                 </Col>
               ))}

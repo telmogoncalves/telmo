@@ -13,6 +13,13 @@ function formatDate(date) {
   return today.toLocaleDateString("en-US", options);
 }
 
+function freshWriting(date) {
+  const writingDate = new Date(date).getTime()
+  const today = new Date().getTime()
+
+  return today - writingDate < (60 * 60 * 1000 * 24 * 2) // 2 days old
+}
+
 function Homepage({ writings }) {
   return (
     <>
@@ -32,6 +39,7 @@ function Homepage({ writings }) {
                     <Col md={12}>
                       <Link href="/writings/[slug]" as={`/writings/${slug}`}>
                         <a>
+                          {freshWriting(date) && <div className="pulse" />}
                           <span className="writing-title">{title}</span>
                         </a>
                       </Link>

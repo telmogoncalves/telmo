@@ -55,8 +55,14 @@ function Layout({ children, isHomepage, secondaryPage, noHead = false }) {
     <>
       <div className="top-menu">
         <Row>
-          <Col xs={6}>
+          <Col xs={10}>
             <ul>
+              <li className="logo">
+                <Link href="/" as="/">
+                  <a>⧩</a>
+                </Link>
+              </li>
+
               {menu.map(({ path, name }) => (
                 <li key={name}>
                   <Link href={path} as={path}>
@@ -67,7 +73,7 @@ function Layout({ children, isHomepage, secondaryPage, noHead = false }) {
             </ul>
           </Col>
 
-          <Col xs={6} style={{ textAlign: 'right' }}>
+          <Col xs={2} style={{ textAlign: 'right' }}>
             <button className="theme-switch-button" onClick={() => switchTheme()}>
               {theme === 'dark' ? <Sun /> : <Moon />}
             </button>
