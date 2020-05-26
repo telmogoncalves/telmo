@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "build:static": "next build && next export"
   },
   "author": "Telmo Goncalves <@telmo>",
   "license": "ISC",
