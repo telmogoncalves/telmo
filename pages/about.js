@@ -13,7 +13,6 @@ import { PRESENT, SKILLS } from '../constants/Stack'
 
 function About() {
   const [index, setIndex] = useState(0)
-  const avatar = `/images/Avatar.jpg`
 
   useEffect(() => {
     const intervalId = setInterval(() =>
@@ -24,8 +23,6 @@ function About() {
 
   return (
     <>
-      <img className="about-avatar" src={avatar} />
-
       <Layout secondaryPage>
         <div style={{ marginTop: 50 }}>
           <h1 className="about-h1">

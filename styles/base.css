@@ -313,16 +313,6 @@ footer {
   font-weight: 600;
 }
 
-.about-avatar {
-  width: 50%;
-  border-radius: 100%;
-  position: fixed;
-  bottom: -20vh;
-  left: -20vh;
-  z-index: -1;
-  opacity: .07;
-}
-
 .uses-list {
   list-style: none;
   margin: 40px 0 80px;
@@ -435,10 +425,6 @@ footer {
 
   .text-transition {
     display: block !important;
-  }
-
-  .about-avatar {
-    width: 120%;
   }
 
   .writing-row a {
