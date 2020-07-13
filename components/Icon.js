@@ -6,7 +6,7 @@ const Icon = ({ type, style }) => {
 
   return (
     <div
-      data-icon={icon}
+      data-icon={type}
       style={{
         fill: `#${icon.hex}`,
         display: 'inline-block',
