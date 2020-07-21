@@ -138,7 +138,7 @@ your `index.html` file add the following code:
 Now, if you refresh the page you'll see that it switched to a `#000` background
 and `#fff` text. Cool beans right?
 
-Lets break this down, what `document.documentElement` gets it's the `html` tag from
+Lets break this down, what `document.documentElement` gets is the `html` tag from
 our `index.html`, so even without the JavaScript code we could do:
 
 ```html:!2
@@ -148,7 +148,7 @@ our `index.html`, so even without the JavaScript code we could do:
 <!-- Rest of the code -->
 ```
 
-This would have exactly the same effect, but we want to use JavaScript to we
+This would have exactly the same effect, but we want to use JavaScript so we
 can change it dynamically.
 
 <br />
