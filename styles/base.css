@@ -410,6 +410,11 @@ footer {
 }
 
 @media only screen and (max-width: 960px) {
+  .top-menu ul li a {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
   .writing-row .writing-date {
     text-align: left;
     padding: 10px 0;
