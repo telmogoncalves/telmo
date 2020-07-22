@@ -16,6 +16,10 @@ const menu = [
     path: '/uses',
     name: 'uses',
   },
+  {
+    path: '/reviews',
+    name: 'Reviews',
+  },
 ]
 
 function Layout({ children, isHomepage, secondaryPage, noHead = false }) {

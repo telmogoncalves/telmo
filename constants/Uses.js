@@ -1,6 +1,6 @@
 export const USES = [
   {
-    title: 'Coding',
+    title: 'Coding Software',
     stack: [
       { name: 'Sublime Text 3', description: 'By far my favorite Text Editor', link: 'https://www.sublimetext.com/3' },
       { name: 'Visual Studio Code', description: 'From time to time', link: 'https://code.visualstudio.com/' },

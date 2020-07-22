@@ -25,7 +25,7 @@ function About() {
     <>
       <Layout secondaryPage>
         <div style={{ marginTop: 50 }}>
-          <h1 className="about-h1">
+          <h1 className="main-h1 about-h1">
             Telmo {' '}
             <TextTransition
               text={SKILLS[index % SKILLS.length]}

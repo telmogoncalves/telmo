@@ -1,5 +1,6 @@
 @import url('https://rsms.me/inter/inter.css');
 @import url('https://use.typekit.net/cyw3eir.css');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 
 :root {
   --primary-color: #0070f4;
@@ -51,7 +52,7 @@ body {
 
 .top-menu ul li {
   display: inline-block;
-  margin-right: 2px;
+  margin-right: 1px;
 }
 
 .top-menu ul li.logo a {
@@ -146,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.9em;
 }
 
-.writing-title-h1, .uses-h1, .about-h1 {
+.main-h1 {
   font-weight: 700;
   font-size: 72px;
   letter-spacing: -.2rem;
@@ -190,7 +191,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0px 30px;
 }
 
-.writing-container p {
+.writing-container p, .reviews-description {
   line-height: 1.8em;
   margin-bottom: 40px;
   font-size: 20px;
@@ -217,7 +218,9 @@ hr {
 .writing-container a {
   color: var(--heading-color);
   text-decoration: none;
-  border-bottom: 1px var(--heading-color) dashed;
+  text-decoration: underline;
+  text-decoration-color: var(--highlight-color);
+  text-decoration-thickness: 3px;
 }
 
 .back-button {
@@ -325,7 +328,9 @@ footer {
   font-weight: 600;
   font-size: 32px;
   margin-bottom: 20px;
-  box-shadow: inset 0 -16px 0 var(--highlight-color);
+  text-decoration: underline;
+  text-decoration-color: var(--highlight-color);
+  text-decoration-thickness: 5px;
   display: inline-block;
 }
 
@@ -434,4 +439,62 @@ footer {
   .logo {
     display: none;
   }
+}
+
+.pr-reviews-img {
+  width: 50%;
+  display: block;
+  margin: 50px auto;
+  border: 1px var(--hr-color) solid;
+  padding: 30px 15px;
+  border-radius: 5px;
+}
+
+.reviews-list {
+  list-style: none;
+  padding: 0;
+  font-family: ibm-plex-mono, Monaco, 'Lucida Console';
+  font-size: 16px;
+}
+
+.reviews-list li {
+  padding: 5px 0 25px;
+}
+
+.reviews-list a, .reviews-list .point {
+  color: var(--heading-color);
+  font-weight: 600;
+  margin-right: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.reviews-what-to-do {
+  font-family: ibm-plex-mono, Monaco, 'Lucida Console';
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  text-decoration-color: var(--highlight-color);
+  text-decoration-thickness: 5px;
+  display: inline-block;
+}
+
+.happy-coding {
+  margin-top: 50px;
+}
+
+.happy-coding span {
+  display: block;
+}
+
+.happy-coding span:first-child {
+  font-family: ibm-plex-mono, Monaco, 'Lucida Console';
+  font-weight: 600;
+}
+
+.happy-coding span:last-child {
+  font-family: Kalam;
+  font-size: 30px;
+  margin-top: 20px;
 }

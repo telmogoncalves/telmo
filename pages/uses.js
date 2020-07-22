@@ -7,7 +7,7 @@ function Uses({ og }) {
   return (
     <>
       <Layout secondaryPage>
-        <h1 className="uses-h1">What I use</h1>
+        <h1 className="main-h1">What I use</h1>
 
         <div className="uses-intro">
           I often get asked about what's my setup as well as what
