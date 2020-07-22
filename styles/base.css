@@ -91,6 +91,7 @@ body {
   cursor: hand;
   color: var(--heading-color);
   outline: 0;
+  margin-top: 5px;
 }
 
 .theme-switch-button svg {
