@@ -41,7 +41,7 @@ function Reviews() {
                   <span className="point">Repository</span>
                   If the repository is private you'll need to add {' '}
                   <a href="https://github.com/telmogoncalves" style={{ display: 'inline', margin: 0 }} target="_blank" rel="noopener noreferrer nofollow">my account</a> {' '}
-                  as a colaborator.
+                  as a collaborator.
                 </li>
 
                 <li>
@@ -52,7 +52,7 @@ function Reviews() {
 
                 <li>
                   <span className="point">Timings</span>
-                  Keep in mind I might not review pull requests every single day, although,
+                  Keep in mind I might not review pull requests every single day, although
                   if you see that I'm taking too long drop me a message on {' '}
                   <a href="https://twitter.com/telmo" style={{ display: 'inline', margin: 0 }} target="_blank" rel="noopener noreferrer nofollow">Twitter</a>.
                 </li>
