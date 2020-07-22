@@ -87,7 +87,7 @@ Reviews.getInitialProps = () => {
     data: {
       og: {
         description: "Need feedback on a pull request?",
-        image: "/og/reviews.png"
+        image: "https://telmo.im/og/reviews.png"
       }
     }
   }
