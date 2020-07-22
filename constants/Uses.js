@@ -3,7 +3,7 @@ export const USES = [
     title: 'Coding',
     stack: [
       { name: 'Sublime Text 3', description: 'By far my favorite Text Editor', link: 'https://www.sublimetext.com/3' },
-      { name: 'Visual Studio Code', description: 'From times to times', link: 'https://code.visualstudio.com/' },
+      { name: 'Visual Studio Code', description: 'From time to time', link: 'https://code.visualstudio.com/' },
       { name: 'Auy', description: `I've been using this theme for a few weeks now`, link: 'https://github.com/dempfi/ayu' },
       { name: 'IBM Plex Mono', description: `I'm currently giving this font a try`, link: 'https://fonts.google.com/specimen/IBM+Plex+Mono' },
       { name: 'iTerm2', description: 'Has been my terminal for many years now', link: 'https://iterm2.com/' },
