@@ -287,7 +287,7 @@ We can now parse the data and pass it to the `PostTemplate` props:
 
 > Don't forget to import `matter`
 
-```js:1,10-11,13-14
+```js:1,8,10-11,13-14
 import matter from 'gray-matter'
 
 // ...
