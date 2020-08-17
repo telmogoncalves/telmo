@@ -50,16 +50,13 @@ If you want to learn PHP or Ruby on Rails just do it. It's OK to follow some adv
 but sometimes it's just too much, it feels like _experienced_ folks are putting too much
 pressure on you to follow the right way.
 
-Sometime you're taking advice from folks that never build a single application in their
-life, now tell me, if you've never built an application how the hell you're in a position
-of telling others how they should learn how to code? Spoiler alert, **you're not**.
+Sometime we're taking advice from folks that never built a single application in their
+life, now tell me, if they've never built an application how the hell are they in a position
+of telling others how they should learn how to code? Spoiler alert, **they're not**.
 
 ---
 
-I'll leave you with what I learned over these 13 years, ordered:
-_HTML, CSS, PHP, jQuery, Vanilla JS, Ruby on Rails, CoffeeScript, Angular, more Vanilla JS,_
-_ReactJS, finally just a pinch of Backbone.js_, it's missing a lot more that I ended up
-working over the years but I guess you get the gist of it.
+If you want to know what I've learned over the years check out my [about page](/about).
 
 <br />
 <br />

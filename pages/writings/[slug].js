@@ -43,7 +43,7 @@ function Writing({ content, data }) {
                 code: CodeBlock,
                 link: props => {
                   if (!props.href.startsWith('http')) {
-                     return props.href;
+                     return <a href={props.href} rel="nofollow noreferrer noopener">{props.children}</a>;
                   }
 
                   return <a href={props.href} rel="nofollow noreferrer noopener" target="_blank">{props.children}</a>;
