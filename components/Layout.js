@@ -102,7 +102,7 @@ function Layout({ children, isHomepage, secondaryPage, noHead = false }) {
       </Grid>
 
       <footer>
-        <div>No tracking, no ads, enjoy your {currentDayName()}.</div>
+        <div>No tracking. No ads. Happy {currentDayName()}!</div>
         <div>&copy; {new Date().getFullYear()}</div>
       </footer>
     </>
