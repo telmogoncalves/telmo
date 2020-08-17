@@ -22,7 +22,7 @@
   --heading-color: #fff;
   --highlight-color: #f81de6;
   --hr-color: #222;
-  --writing-body: #ccc;
+  --writing-body: #eee;
 }
 
 ::-moz-selection { background: var(--highlight-color); }
