@@ -129,7 +129,6 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--font-color);
   display: block;
   transition: all .2s;
-  text-decoration: none;
 }
 
 .writing-row a:hover {
@@ -218,7 +217,6 @@ hr {
 
 .writing-container a {
   color: var(--heading-color);
-  text-decoration: none;
   text-decoration: underline;
   text-decoration-color: var(--highlight-color);
   text-decoration-thickness: 3px;
@@ -280,6 +278,7 @@ footer {
   color: var(--heading-color);
   text-decoration: none;
   font-weight: 500;
+  font-size: 15px;
 }
 
 .author img {
@@ -295,10 +294,11 @@ footer {
 }
 
 .twitter-follow {
+  font-family: Kalam;
   border: 3px var(--highlight-color) dashed;
-  padding: 30px;
+  padding: 18px 20px 15px;
   border-radius: 8px;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 1.9em;
 }
 
