@@ -51,8 +51,8 @@ but sometimes it's just too much, it feels like _experienced_ folks are putting 
 pressure on you to follow the right way.
 
 Sometime you're taking advice from folks that never build a single application in their
-lifes, now tell me, if you've never built an application how the hell you're in a position
-of telling others how they should learn how to code? Spoiler alert, you're not.
+life, now tell me, if you've never built an application how the hell you're in a position
+of telling others how they should learn how to code? Spoiler alert, **you're not**.
 
 ---
 
