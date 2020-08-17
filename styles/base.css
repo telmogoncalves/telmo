@@ -57,7 +57,7 @@ body {
 
 .top-menu ul li.logo a {
   font-size: 20px;
-  margin: -5px 0 0;
+  margin: -7px 0 0;
   display: inline-block;
   vertical-align: middle;
 }
@@ -269,6 +269,7 @@ footer {
   font-size: 13px;
   padding: 100px 0;
   color: var(--secondary-color);
+  line-height: 2em;
 }
 
 .author {

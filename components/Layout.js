@@ -3,6 +3,8 @@ import { Grid, Row, Col } from 'react-flexbox-grid'
 import { Sun, Moon } from 'react-feather'
 import Link from 'next/link'
 
+import { currentDayName } from '../utils/dateUtils'
+
 const menu = [
   {
     path: '/',
@@ -100,7 +102,8 @@ function Layout({ children, isHomepage, secondaryPage, noHead = false }) {
       </Grid>
 
       <footer>
-        &copy; {new Date().getFullYear()}
+        <div>No tracking, no ads, enjoy your {currentDayName()}.</div>
+        <div>&copy; {new Date().getFullYear()}</div>
       </footer>
     </>
   )
