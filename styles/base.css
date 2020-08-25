@@ -129,6 +129,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--font-color);
   display: block;
   transition: all .2s;
+  text-decoration: none;
 }
 
 .writing-row a:hover {
@@ -514,5 +515,5 @@ footer {
 
 .reading-time svg {
   vertical-align: middle;
-  margin: 0 5px 0 0;
+  margin: -2px 5px 0 0;
 }
