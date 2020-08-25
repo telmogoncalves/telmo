@@ -2,8 +2,10 @@ import React from 'react'
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
 import Link from 'next/link'
-import Head from 'next/head'
+import { BookOpen } from 'react-feather'
 import ProgressBar from 'react-scroll-progress-bar'
+import readingTime from 'reading-time'
+import { Row, Col } from 'react-flexbox-grid'
 
 import Layout from '../../components/Layout'
 import CodeBlock from '../../components/CodeBlock'
@@ -12,6 +14,7 @@ function Writing({ content, data }) {
   const frontmatter = data
   const { title, author } = frontmatter
   const avatar = `https://images.weserv.nl/?url=https://unavatar.now.sh/twitter/${author.twitter}&w=40`
+  const { text } = readingTime(content)
 
   return (
     <>
@@ -26,7 +29,13 @@ function Writing({ content, data }) {
               back
             </a>
           </Link>
+
           <h1 className="main-h1">{title}</h1>
+
+          <div className="reading-time">
+            <BookOpen size="16px" />
+            {text}
+          </div>
 
           <div className="author">
             <a href={`https://twitter.com/${author.twitter}`} target="_blank" rel="noopener noreferrer nofollow">

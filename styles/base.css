@@ -505,3 +505,14 @@ footer {
   font-size: 30px;
   margin-top: 20px;
 }
+
+.reading-time {
+  font-size: 12px;
+  margin: 20px 0 40px;
+  color: var(--uses-secondary-color);
+}
+
+.reading-time svg {
+  vertical-align: middle;
+  margin: 0 5px 0 0;
+}
