@@ -21,14 +21,10 @@ const menu = [
     path: '/uses',
     name: '2. uses',
   },
-  {
-    path: '/reviews',
-    name: '3. Reviews',
-  },
 ]
-const SHORTCUTS = ['Digit0', 'Digit1', 'Digit2', 'Digit3']
+const SHORTCUTS = ['Digit0', 'Digit1', 'Digit2']
 
-function Layout({ children, isHomepage, secondaryPage, noHead = false }) {
+function Layout({ children, isHomepage, secondaryPage }) {
   const router = useRouter()
   const onLoadTheme = typeof localStorage !== 'undefined' && localStorage.getItem('BLOG_THEME')
   const [theme, setTheme] = useState(onLoadTheme)
@@ -39,7 +35,7 @@ function Layout({ children, isHomepage, secondaryPage, noHead = false }) {
     setTheme(setTo)
   }
 
-  function logKey(e) {
+  function triggerShortcut(e) {
     if (SHORTCUTS.includes(e.code)) {
       // Split code to get only the number
       const code = e.code.split('t')[1]
@@ -52,7 +48,7 @@ function Layout({ children, isHomepage, secondaryPage, noHead = false }) {
   }
 
   useEffect(() => {
-    document.addEventListener('keypress', logKey)
+    document.addEventListener('keypress', triggerShortcut)
 
     if (onLoadTheme) return
 

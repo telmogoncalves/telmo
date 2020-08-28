@@ -58,7 +58,7 @@ body {
 
 .top-menu ul li.logo a {
   font-size: 20px;
-  margin: -7px 0 0;
+  margin: -5px 0 0;
   display: inline-block;
   vertical-align: middle;
 }
@@ -71,13 +71,15 @@ body {
 
 .top-menu ul li a {
   color: var(--heading-color);
-  font-family: ibm-plex-mono, Monaco, 'Lucida Console';
+  /* font-family: ibm-plex-mono, Monaco, 'Lucida Console'; */
   padding: 0 0 3px;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 13px;
   text-transform: uppercase;
-  padding: 3px 10px 5px;
+  padding: 6px 10px 5px;
   border-radius: 4px;
+  letter-spacing: -.5px;
+  font-weight: 500;
 }
 
 .top-menu ul li a:hover {
@@ -93,6 +95,9 @@ body {
   color: var(--heading-color);
   outline: 0;
   margin-top: 5px;
+  position: fixed;
+  top: 15px;
+  right: 15px;
 }
 
 .theme-switch-button svg {
@@ -140,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
 .writing-row .writing-date {
   padding-right: 20px;
   font-size: 14px;
-  color: var(--secondary-color);
+  color: var(--uses-secondary-color);
 }
 
 .writing-row .writing-title {
@@ -391,7 +396,7 @@ footer {
 	box-shadow: 0 0 0 0 var(--highlight-color);
 	transform: scale(1.2);
   animation: pulse 2s infinite;
-  margin: -7px 15px 0 0;
+  margin: -5px 15px 0 0;
   vertical-align: middle;
 }
 
@@ -451,6 +456,10 @@ footer {
   .support-blm span {
     display: block;
     line-height: 1.9em;
+  }
+
+  .support-blm span:after, .support-blm span:before {
+    height: 90px !important;
   }
 }
 
@@ -524,16 +533,53 @@ footer {
 }
 
 .support-blm {
-  margin: 25px 25px 10px;
+  margin: 60px 25px 40px;
+  text-align: center;
 }
 
 .support-blm span {
-  background: var(--highlight-color);
   padding: 5px 20px 8px;
   border-radius: 4px;
   font-family: ibm-plex-mono, Monaco, 'Lucida Console';
   letter-spacing: -.5px;
   font-size: 14px;
+  position:relative;
+}
+
+.support-blm span:before {
+  content: '';
+  z-index: -1;
+  left: -0.5em;
+  top: -1em;
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--highlight-color);
+  position: absolute;
+  border-right-color: transparent;
+  width: 100%;
+  height: 4em;
+  transform: rotate(1.4deg);
+  opacity: 0.7;
+  border-radius: 50%;
+  padding: 0.1em 0.25em;
+}
+
+.support-blm span:after {
+  content: '';
+  z-index: -1;
+  left: -0.3em;
+  top: -1.5em;
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--highlight-color);
+  position: absolute;
+  border-left-color: transparent;
+  width: 100%;
+  height: 5em;
+  transform: rotate(-1deg);
+  opacity: 0.7;
+  border-radius: 50%;
+  padding: 0.1em 0.25em;
 }
 
 .support-blm a {
