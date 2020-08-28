@@ -1,6 +1,6 @@
 ---
 title: "Rejection is normal"
-date: "2020-08-28 02:00"
+date: "2020-08-28T02:00"
 og:
   description: "Being rejected is perfectly normal, embrace it."
   image: "https://telmo.im/og/rejection-normal.png"
