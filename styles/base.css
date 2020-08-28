@@ -35,6 +35,7 @@ html {
 body {
   background-color: var(--bg-color);
   color: var(--font-color);
+  margin: 0;
 }
 
 * {
@@ -446,6 +447,11 @@ footer {
   .logo {
     display: none;
   }
+
+  .support-blm span {
+    display: block;
+    line-height: 1.9em;
+  }
 }
 
 .pr-reviews-img {
@@ -515,4 +521,21 @@ footer {
 .reading-time svg {
   vertical-align: middle;
   margin: -2px 5px 0 0;
+}
+
+.support-blm {
+  margin: 25px 25px 10px;
+}
+
+.support-blm span {
+  background: var(--highlight-color);
+  padding: 5px 20px 8px;
+  border-radius: 4px;
+  font-family: ibm-plex-mono, Monaco, 'Lucida Console';
+  letter-spacing: -.5px;
+  font-size: 14px;
+}
+
+.support-blm a {
+  color: var(--writing-body);
 }

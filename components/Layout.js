@@ -2,29 +2,34 @@ import React, { useState, useEffect } from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 import { Sun, Moon } from 'react-feather'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 import { currentDayName } from '../utils/dateUtils'
+
+import BlackLivesMatter from './BlackLivesMatter'
 
 const menu = [
   {
     path: '/',
-    name: 'start',
+    name: '0. start',
   },
   {
     path: '/about',
-    name: 'about',
+    name: '1. about',
   },
   {
     path: '/uses',
-    name: 'uses',
+    name: '2. uses',
   },
   {
     path: '/reviews',
-    name: 'Reviews',
+    name: '3. Reviews',
   },
 ]
+const SHORTCUTS = ['Digit0', 'Digit1', 'Digit2', 'Digit3']
 
 function Layout({ children, isHomepage, secondaryPage, noHead = false }) {
+  const router = useRouter()
   const onLoadTheme = typeof localStorage !== 'undefined' && localStorage.getItem('BLOG_THEME')
   const [theme, setTheme] = useState(onLoadTheme)
   const [mounted, setMounted] = useState(false)
@@ -34,7 +39,21 @@ function Layout({ children, isHomepage, secondaryPage, noHead = false }) {
     setTheme(setTo)
   }
 
+  function logKey(e) {
+    if (SHORTCUTS.includes(e.code)) {
+      // Split code to get only the number
+      const code = e.code.split('t')[1]
+
+      // Get route from menu
+      const { path } = menu[code]
+
+      router.push(path)
+    }
+  }
+
   useEffect(() => {
+    document.addEventListener('keypress', logKey)
+
     if (onLoadTheme) return
 
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
@@ -59,6 +78,8 @@ function Layout({ children, isHomepage, secondaryPage, noHead = false }) {
 
   return (
     <>
+      <BlackLivesMatter />
+
       <div className="top-menu">
         <Row>
           <Col xs={10}>
