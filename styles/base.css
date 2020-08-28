@@ -460,6 +460,7 @@ footer {
 
   .support-blm span:after, .support-blm span:before {
     height: 90px !important;
+    top: -1em !important;
   }
 }
 
