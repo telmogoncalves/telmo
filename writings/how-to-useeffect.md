@@ -47,7 +47,7 @@ Let us combine both `useState` and `useEffect`:
 
 ```js
 // Here we are setting the `online` state to false
-const [online, setOnline] = useStatus(false)
+const [online, setOnline] = useState(false)
 ```
 
 Build a button to trigger a change on the `online` state:
