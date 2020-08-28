@@ -206,7 +206,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 2px 7px 5px;
   border-radius: 4px;
   line-height: 1em;
-  font-size: 16px;
+  font-size: 17px;
   display: inline-flex;
 }
 
@@ -294,13 +294,12 @@ footer {
   align-items: center;
 }
 
-.twitter-follow {
+.hope-liked {
   font-family: Kalam;
-  border: 3px var(--highlight-color) dashed;
-  padding: 18px 20px 15px;
-  border-radius: 8px;
   font-size: 21px;
   line-height: 1.9em;
+  margin-top: 80px;
+  text-align: right;
 }
 
 .uses-intro, .about-intro {
