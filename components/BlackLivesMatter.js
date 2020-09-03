@@ -9,7 +9,7 @@ function BlackLivesMatter() {
         I support <strong>#BlackLivesMatter</strong>, consider making a donation. {' '}
 
         <a href={DONATE_LINK} target="_blank" rel="noopener noreferrer nofollow">
-          Donate!
+          Donate now!
         </a>
       </span>
     </div>
