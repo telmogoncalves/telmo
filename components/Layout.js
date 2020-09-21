@@ -38,13 +38,13 @@ const SALUTS = [
   `G'day mate!`,
   'Sup?'
 ]
-const randomSalut = () => SALUTS[Math.floor(Math.random() * SALUTS.length)]
 
 function Layout({ children, isHomepage, secondaryPage }) {
   const router = useRouter()
   const onLoadTheme = typeof localStorage !== 'undefined' && localStorage.getItem('BLOG_THEME')
   const [theme, setTheme] = useState(onLoadTheme)
   const [mounted, setMounted] = useState(false)
+  const [salut] = useState(SALUTS[Math.floor(Math.random() * SALUTS.length)])
   const switchTheme = () => {
     const setTo = theme === 'dark' ? 'light' : 'dark'
 
@@ -128,7 +128,7 @@ function Layout({ children, isHomepage, secondaryPage }) {
             {!secondaryPage && (
               <div style={{ textAlign: 'center' }}>
                 <h1 className="blog-title">
-                  {randomSalut()}
+                  {salut}
                 </h1>
 
                 <p className="entry-description">
