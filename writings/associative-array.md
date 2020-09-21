@@ -25,7 +25,7 @@ function stop() {
 }
 ```
 
-Alright, if we can each function we should get a console log with the respective content:
+Alright, if we call each function we should get a console log with the respective content:
 
 ```js
 start(); // Starting...

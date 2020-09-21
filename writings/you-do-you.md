@@ -25,7 +25,7 @@ As the months passed by I started to realize it wasn't *me* sharing the content,
 
 Another thing I realised was that a lot of people use Twitter sort of as a source of truth. *"Wow, if this account with 40K followers is saying I need a YouTube channel maybe I do need one, let me take care of that."*, don't fall for this, create a YouTube channel **only** if you want one.
 
-It starts to get a little overwhelming for beginners, they really so many crap on Twitter that many just end up giving up because they think they need to own the world to become a developer.
+It starts to get a little overwhelming for beginners, they read so many crap on Twitter that many just end up giving up because they think they need to own the world to become a developer.
 
 ---
 
