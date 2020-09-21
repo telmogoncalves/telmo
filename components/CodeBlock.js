@@ -2,7 +2,6 @@ import React, { PureComponent } from 'react'
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import { anOldHope } from 'react-syntax-highlighter/dist/esm/styles/hljs'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
-import { Copy, Check } from 'react-feather'
 
 const preStyle = {
   borderRadius: 6,

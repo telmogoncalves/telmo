@@ -10,9 +10,7 @@ author:
 ---
 
 I don't want to waste your time with this article so I'll say it upfront,
-**the right way of getting into coding doesn't exist.**
-
-Now that we get that out of the way lets get started. This is highly focused on
+**the right way of getting into coding doesn't exist.** Now that we get that out of the way lets get started. This is highly focused on
 my own experience, I started coding in 2007.
 
 ---

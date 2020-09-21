@@ -23,6 +23,7 @@ const menu = [
   },
 ]
 const SHORTCUTS = ['Digit0', 'Digit1', 'Digit2']
+const avatar = `https://images.weserv.nl/?url=https://unavatar.now.sh/twitter/telmo&w=150`
 
 function Layout({ children, isHomepage, secondaryPage }) {
   const router = useRouter()
@@ -82,7 +83,9 @@ function Layout({ children, isHomepage, secondaryPage }) {
             <ul>
               <li className="logo">
                 <Link href="/" as="/">
-                  <a>⧩</a>
+                  <a>
+                    <img src={avatar} />
+                  </a>
                 </Link>
               </li>
 

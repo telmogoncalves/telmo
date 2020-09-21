@@ -58,15 +58,24 @@ body {
 
 .top-menu ul li.logo a {
   font-size: 20px;
-  margin: -5px 0 0;
   display: inline-block;
   vertical-align: middle;
 }
 
+.top-menu ul li.logo img {
+  width: 40px;
+  border-radius: 250px;
+  padding: 3px;
+  border: 3px var(--primary-color) solid;
+  transition: all .1s linear;
+}
+
 .top-menu ul li.logo a:hover {
   background: none;
-  color: var(--text-color);
-  opacity: .3;
+}
+
+.top-menu ul li.logo a:hover img {
+  border-color: var(--secondary-color);
 }
 
 .top-menu ul li a {
@@ -75,15 +84,15 @@ body {
   font-size: 13px;
   text-transform: uppercase;
   padding: 4px 10px 6px;
-  border-top-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-radius: 5px;
   letter-spacing: -.5px;
   font-weight: 500;
   font-family: ibm-plex-mono, Monaco, 'Lucida Console';
+  transition: all .2s linear;
 }
 
 .top-menu ul li a:hover {
-  background: var(--text-color);
+  background: var(--primary-color);
   color: var(--background-color);
 }
 
@@ -176,10 +185,6 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-text-fill-color: transparent;
   line-height: 1em;
   padding-bottom: 20px;
-}
-
-.about-h1 {
-  margin-bottom: 60px;
 }
 
 .writing-container h1,
@@ -368,8 +373,7 @@ footer {
   font-weight: 600;
   font-size: 32px;
   margin-bottom: 20px;
-  text-decoration: underline;
-  text-decoration-color: var(--primary-color);
+  color: var(--primary-color);
   text-decoration-thickness: 5px;
   display: inline-block;
 }
@@ -451,8 +455,8 @@ footer {
 
 @media only screen and (max-width: 960px) {
   .top-menu ul li a {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
   }
 
   .writing-row .writing-date {
@@ -541,9 +545,7 @@ footer {
   font-weight: 600;
   font-size: 32px;
   margin-bottom: 20px;
-  text-decoration: underline;
-  text-decoration-color: var(--primary-color);
-  text-decoration-thickness: 5px;
+  color: var(--primary-color);
   display: inline-block;
 }
 
@@ -579,18 +581,18 @@ footer {
 
 .support-blm {
   margin: 30px 25px 25px;
+  text-align: center;
 }
 
 .support-blm span {
   padding: 4px 15px 6px;
   border-radius: 4px;
-  font-family: ibm-plex-mono, Monaco, 'Lucida Console';
+  font-family: Kalam;
   letter-spacing: -.5px;
-  font-size: 14px;
-  background: var(--primary-color);
-  color: #fff;
+  font-size: 18px;
+  color: var(--text-color);
 }
 
 .support-blm a {
-  color: #fff;
+  color: var(--primary-color);
 }
