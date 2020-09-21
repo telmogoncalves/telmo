@@ -24,6 +24,21 @@ const menu = [
 ]
 const SHORTCUTS = ['Digit0', 'Digit1', 'Digit2']
 const avatar = `https://images.weserv.nl/?url=https://unavatar.now.sh/twitter/telmo&w=150`
+const SALUTS = [
+  'Hey you.',
+  'Welcome.',
+  'Howdy.',
+  'Ahoy!',
+  `What's up?`,
+  `How's life?`,
+  '👋',
+  'Long time no see.',
+  'Yo!',
+  'Hiya!',
+  `G'day mate!`,
+  'Sup?'
+]
+const randomSalut = () => SALUTS[Math.floor(Math.random() * SALUTS.length)]
 
 function Layout({ children, isHomepage, secondaryPage }) {
   const router = useRouter()
@@ -113,11 +128,11 @@ function Layout({ children, isHomepage, secondaryPage }) {
             {!secondaryPage && (
               <div style={{ textAlign: 'center' }}>
                 <h1 className="blog-title">
-                  Hi, I'm Telmo.
+                  {randomSalut()}
                 </h1>
 
                 <p className="entry-description">
-                  Writings about code, design & life.
+                  I write about code, design & life. — Telmo
                 </p>
               </div>
             )}
