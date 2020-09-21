@@ -73,10 +73,12 @@ body {
   text-decoration: none;
   font-size: 13px;
   text-transform: uppercase;
-  padding: 6px 10px;
-  border-radius: 4px;
+  padding: 4px 10px 6px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   letter-spacing: -.5px;
   font-weight: 500;
+  font-family: ibm-plex-mono, Monaco, 'Lucida Console';
 }
 
 .top-menu ul li a:hover {
