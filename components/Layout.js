@@ -114,7 +114,7 @@ function Layout({ children, isHomepage, secondaryPage }) {
                 </h1>
 
                 <p className="entry-description">
-                  Here you can find writings about code, design & life.
+                  Writings about code, design & life.
                 </p>
               </div>
             )}
