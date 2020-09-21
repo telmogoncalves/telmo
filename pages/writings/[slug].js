@@ -5,7 +5,6 @@ import Link from 'next/link'
 import { BookOpen } from 'react-feather'
 import ProgressBar from 'react-scroll-progress-bar'
 import readingTime from 'reading-time'
-import { Row, Col } from 'react-flexbox-grid'
 
 import Layout from '../../components/Layout'
 import CodeBlock from '../../components/CodeBlock'

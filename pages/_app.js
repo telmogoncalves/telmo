@@ -16,6 +16,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@telmo" />
         <meta property="og:image" content={og ? og.image : `https://telmo.im/og/default.png`} />
+        <meta name="monetization" content="$ilp.uphold.com/iRX2HpJ4FRQ3" />
 
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
