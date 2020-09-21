@@ -23,7 +23,7 @@ function Writing({ content, data }) {
       </div>
 
       <Layout secondaryPage noHead>
-        <div style={{ marginTop: 50 }}>
+        <div style={{ marginTop: 50 }} className="article-body">
           <Link href="/" as="/">
             <a className="back-button">
               back
