@@ -1,37 +1,18 @@
 import React, { useState, useEffect } from 'react'
 import { Row, Col } from 'react-flexbox-grid'
 import dynamic from 'next/dynamic'
-import { config } from 'react-spring'
-
-const TextTransition = dynamic(() => import("react-text-transition"), {
-  ssr: false
-});
 
 import Layout from '../components/Layout'
 import Icon from '../components/Icon'
-import { PRESENT, SKILLS } from '../constants/Stack'
+import { PRESENT } from '../constants/Stack'
 
 function About() {
-  const [index, setIndex] = useState(0)
-
-  useEffect(() => {
-    const intervalId = setInterval(() =>
-      setIndex(index => index + 1),
-      3000 // every 3 seconds
-    )
-  }, [])
-
   return (
     <>
       <Layout secondaryPage>
         <div style={{ marginTop: 50 }}>
           <h1 className="main-h1 about-h1">
-            Telmo {' '}
-            <TextTransition
-              text={SKILLS[index % SKILLS.length]}
-              springConfig={config.gentle}
-              style={{ display: 'inline-block' }}
-            />
+            About me.
           </h1>
 
           <div className="about-intro">

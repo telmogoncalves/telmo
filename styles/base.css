@@ -7,10 +7,11 @@
   --font-color: #000;
   --bg-color: #fff;
   --heading-color: #000;
-  --highlight-color: #84ffb5;
+  --highlight-color: #007fef;
   --hr-color: #ddd;
   --writing-body: #444;
   --uses-secondary-color: #bbb;
+  --gradient-title: linear-gradient(45deg, #007fef 32.5%, #09ded8 50.5%);
 }
 
 [data-theme="dark"] {
@@ -19,9 +20,10 @@
   --font-color: #fff;
   --bg-color: #010101;
   --heading-color: #fff;
-  --highlight-color: #f81de6;
+  --highlight-color: #fe564c;
   --hr-color: #333;
   --writing-body: #eee;
+  --gradient-title: linear-gradient(45deg, #fe564c 32.5%, #fac82b 50.5%);
 }
 
 ::-moz-selection { background: var(--highlight-color); }
@@ -121,6 +123,9 @@ h1, h2, h3, h4, h5, h6 {
   margin: 100px 0 0;
   letter-spacing: -.05em;
   line-height: 1em;
+  background: var(--gradient-title);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .entry-description {
@@ -164,9 +169,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-h1 {
   font-weight: 800;
-  font-size: 72px;
+  font-size: calc(5vw + 5vh);
   letter-spacing: -.2rem;
   margin: 50px 0 30px;
+  background: var(--gradient-title);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .about-h1 {
@@ -223,9 +231,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .writing-container *:not(pre) > code {
   font-family: ibm-plex-mono, Monaco, 'Lucida Console';
-  background:var(--highlight-color);
-  color: var(--heading-color);
-  padding: 2px 7px 5px;
+  border: 1px var(--highlight-color) dashed;
+  color: var(--highlight-color);
+  padding: 4px 7px 7px;
   border-radius: 4px;
   line-height: 1em;
   font-size: 17px;
@@ -567,8 +575,9 @@ footer {
   letter-spacing: -.5px;
   font-size: 14px;
   background: var(--highlight-color);
+  color: #fff;
 }
 
 .support-blm a {
-  color: var(--writing-body);
+  color: #fff;
 }

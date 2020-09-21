@@ -21,19 +21,3 @@ export const PRESENT = [
   'TypeScript',
   'Zeit',
 ]
-
-export const SKILLS = [
-  'codes',
-  'designs',
-  'naps',
-  'debugs',
-  'makes mistakes',
-  'coaches',
-  'helps',
-  'tries his best',
-  'jokes',
-  'tweets',
-  'lives',
-  'creates bugs',
-  'fixes bugs',
-]
