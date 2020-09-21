@@ -108,9 +108,15 @@ function Layout({ children, isHomepage, secondaryPage }) {
         <Row>
           <Col {...containerProps}>
             {!secondaryPage && (
-              <h1 className={`blog-title`} style={isHomepage && { textAlign: 'left' }}>
-                Telmo, code <span className="amp">&</span> design
-              </h1>
+              <div style={{ textAlign: 'center' }}>
+                <h1 className="blog-title">
+                  Hi, I'm Telmo.
+                </h1>
+
+                <p className="entry-description">
+                  Here you can find writings about code, design & life.
+                </p>
+              </div>
             )}
 
             {children}

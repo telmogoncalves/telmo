@@ -8,7 +8,7 @@
   --bg-color: #fff;
   --heading-color: #000;
   --highlight-color: #84ffb5;
-  --hr-color: #eee;
+  --hr-color: #ddd;
   --writing-body: #444;
   --uses-secondary-color: #bbb;
 }
@@ -20,7 +20,7 @@
   --bg-color: #010101;
   --heading-color: #fff;
   --highlight-color: #f81de6;
-  --hr-color: #222;
+  --hr-color: #333;
   --writing-body: #eee;
 }
 
@@ -114,10 +114,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .blog-title {
   font-weight: 800;
-  font-size: 80px;
+  font-size: calc(5vw + 5vh);
   text-align: center;
-  margin: 100px 0 50px;
+  margin: 100px 0 0;
   letter-spacing: -.05em;
+  line-height: 1em;
+}
+
+.entry-description {
+  font-family: Kalam;
+  margin-bottom: 50px;
+  font-size: 22px;
+  color: var(--secondary-color);
 }
 
 .writing-row span {
@@ -203,6 +211,14 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--writing-body);
 }
 
+.writing-container > p:first-child::first-letter {
+  float: left;
+  margin: 2px 0 0 -2px;
+  padding: 10px 10px 0 0;
+  font-weight: 800;
+  font-size: 5.5rem;
+}
+
 .writing-container *:not(pre) > code {
   font-family: ibm-plex-mono, Monaco, 'Lucida Console';
   background:var(--highlight-color);
@@ -216,8 +232,15 @@ h1, h2, h3, h4, h5, h6 {
 
 hr {
   border: none;
-  border-top: 1px var(--hr-color) solid;
-  margin: 45px 0;
+  width: 100%;
+  text-align: center;
+  margin: 30px auto;
+}
+
+hr:before {
+  content: '∿∿∿';
+  font-size: 30px;
+  color: var(--hr-color);
 }
 
 .writing-container a {
@@ -533,7 +556,6 @@ footer {
 
 .support-blm {
   margin: 30px 25px 25px;
-  text-align: center;
 }
 
 .support-blm span {
