@@ -9,11 +9,7 @@ author:
   name: "Telmo Goncalves"
 ---
 
-I've decided to open source this website. When I first launched it I've posted on Twitter about it asking for feedback. One of the comments was from [Catalin](https://twitter.com/catalinmpit):
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Looks awesome. Teach me.</p>&mdash; Catalin Pit 🤷‍♂️ (@catalinmpit) <a href="https://twitter.com/catalinmpit/status/1252912096528007170?ref_src=twsrc%5Etfw">April 22, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-This gave me the idea of open sourcing this code, thanks Catalin.
+I've decided to open source this website. When I first launched it I've posted on Twitter about it asking for feedback, then I had the idea of open sourcing this code.
 
 ---
 
