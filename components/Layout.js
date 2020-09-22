@@ -138,6 +138,28 @@ function Layout({ children, isHomepage, secondaryPage }) {
             )}
 
             {children}
+
+            {secondaryPage && (
+              <div className="bottom-mobile-nav">
+                <Row>
+                  <Col xs={6} />
+
+                  <Col xs={6}>
+                    <button className="theme-switch-button-mobile" onClick={() => switchTheme()}>
+                      {theme === 'dark' ? (
+                        <>
+                          <Sun /> Light
+                        </>
+                      ) : (
+                        <>
+                          <Moon /> Dark
+                        </>
+                      )}
+                    </button>
+                  </Col>
+                </Row>
+              </div>
+            )}
           </Col>
         </Row>
       </Grid>
