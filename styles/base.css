@@ -454,6 +454,10 @@ footer {
 	}
 }
 
+.theme-switch-button-mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 960px) {
   .bottom-mobile-nav {
     position: fixed;
@@ -504,6 +508,7 @@ footer {
   }
 
   .theme-switch-button-mobile {
+    display: block;
     left: 50%;
     text-transform: uppercase;
   }
