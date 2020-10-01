@@ -420,7 +420,6 @@ footer {
 /* Override scroll progress */
 .writing-progress > div {
   background: var(--primary-color) !important;
-  margin: 0 -8px !important;
 }
 
 .pulse {
